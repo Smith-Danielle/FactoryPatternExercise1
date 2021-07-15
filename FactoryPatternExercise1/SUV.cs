@@ -8,6 +8,7 @@ namespace FactoryPatternExercise1
             Console.WriteLine("Nice choice! How about an SUV?!");
             Console.WriteLine("What make would you prefer?");
             Make = Console.ReadLine();
+            Console.Clear();
         }
 
         
@@ -33,6 +34,7 @@ namespace FactoryPatternExercise1
                 Console.WriteLine("Enter R: Reverse");
                 Console.WriteLine("Enter P: Park");
                 string direction = Console.ReadLine();
+                Console.Clear();
                 if (direction.ToLower() == "d")
                 {
                     if (Gear == 1) 

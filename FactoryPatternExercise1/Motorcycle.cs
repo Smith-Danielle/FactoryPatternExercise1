@@ -8,6 +8,7 @@ namespace FactoryPatternExercise1
             Console.WriteLine("Nice choice! How about a motorcycle?!");
             Console.WriteLine("What make would you prefer?");
             Make = Console.ReadLine();
+            Console.Clear();
         }
         public string Make { get; set; }
         public int Tires { get; set; } = 2;
@@ -27,6 +28,7 @@ namespace FactoryPatternExercise1
             {
                 Console.WriteLine("Select 1 to shift up or Select 2 to shift down");
                 int direction = int.Parse(Console.ReadLine());
+                Console.Clear();
                 if (direction == 1)
                 {
                     if (Gear < 5)
